@@ -1,1 +1,5 @@
-2022-07-29 18:41:40 INFO  PruebaUnidad2LmP2Application:24 - SIS EPUEDE
+2022-07-29 19:52:42 DEBUG PruebaUnidad2LmP2Application:86 - Se inserto el paciente: Paciente [id=2, cedula=001, nombre=Juan, apellido=Orozco, fechaNacimiento=1997-10-01T00:00, codigoSeguro=a1, estatura=1.65, peso=68, genero=M, citaMedicas=null]
+2022-07-29 19:52:42 DEBUG PruebaUnidad2LmP2Application:88 - Se inserto el paciente: Paciente [id=null, cedula=002, nombre=Maria, apellido=Benavides, fechaNacimiento=null, codigoSeguro=a2, estatura=1.70, peso=75, genero=F, citaMedicas=null]
+2022-07-29 19:52:42 DEBUG PruebaUnidad2LmP2Application:91 - Se inserto el doctor: Doctor [id=null, cedula=003, nombre=Alejandro, apellido=Magno, fechaNacimiento=2022-07-29T19:52:42.432740700, numeroConsultorio=1, codigoSenecyt=c1, genero=M, citaMedicas=null]
+2022-07-29 19:52:42 DEBUG PruebaUnidad2LmP2Application:94 - Se inserto el doctor: Doctor [id=null, cedula=004, nombre=Luis, apellido=Montalvo, fechaNacimiento=2022-07-29T19:52:42.432740700, numeroConsultorio=2, codigoSenecyt=c2, genero=M, citaMedicas=null]
+2022-07-29 20:06:23 DEBUG PruebaUnidad2LmP2Application:105 - Persona Sencilla:PacienteSenciilo [cedula=001, nombre=Juan, fechaNacimiento=1997-10-01T00:00, genero=M]

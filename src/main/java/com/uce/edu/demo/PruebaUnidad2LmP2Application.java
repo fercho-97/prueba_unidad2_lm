@@ -10,6 +10,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.uce.edu.demo.prueba.repository.modelo.Doctor;
+import com.uce.edu.demo.prueba.repository.modelo.Paciente;
 import com.uce.edu.demo.prueba.repository.modelo.PacienteSenciilo;
 import com.uce.edu.demo.prueba.service.IDoctorService;
 import com.uce.edu.demo.prueba.service.IGestorCitaMedicaService;
@@ -37,14 +39,14 @@ public class PruebaUnidad2LmP2Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		/*
+		
 		Paciente p1 = new Paciente();
 		p1.setApellido("Orozco");
 		p1.setNombre("Juan");
 		p1.setCedula("001");
 		p1.setCodigoSeguro("a1");
-		p1.setEstatura("1.65");
-		p1.setPeso("68");
+		p1.setEstatura(new Double(1.65));
+		p1.setPeso(new Double(68.8));
 		p1.setGenero("M");
 		p1.setFechaNacimiento(LocalDateTime.of(1997, 10,1,0,0));
 		
@@ -53,10 +55,10 @@ public class PruebaUnidad2LmP2Application implements CommandLineRunner {
 		p2.setNombre("Maria");
 		p2.setCedula("002");
 		p2.setCodigoSeguro("a2");
-		p2.setEstatura("1.70");
-		p2.setPeso("75");
+		p2.setEstatura(new Double(1.70));
+		p2.setPeso(new Double(75.5));
 		p2.setGenero("F");
-		p1.setFechaNacimiento(LocalDateTime.of(1997, 10,1,0,0));
+		p2.setFechaNacimiento(LocalDateTime.of(1997, 10,1,0,0));
 		
 		
 		Doctor d1 = new Doctor();
@@ -90,14 +92,14 @@ public class PruebaUnidad2LmP2Application implements CommandLineRunner {
 		LOG.debug("Se inserto el doctor: "+ d2);
 		this.iDoctorService.insertar(d2);
 		
-		*/
-		
-		//this.iGestorCitaMedicaService.agendar("1", LocalDateTime.now(), new BigDecimal(25), "axis", "003", "001");
-		
-		//this.iGestorCitaMedicaService.actualizarCita("1", "fractura", "inmobilida e ibuprofeno", LocalDateTime.of(2022,10,12,0,0));
 		
 		
+		this.iGestorCitaMedicaService.agendar("1", LocalDateTime.now(), new BigDecimal(25), "axis", "003", "001");
 		
+		this.iGestorCitaMedicaService.actualizarCita("1", "fractura", "inmobilida e ibuprofeno", LocalDateTime.of(2022,10,12,0,0));
+		
+		
+		/*
 		
 		List<PacienteSenciilo> pacienteSenciilos =this.iGestorCitaMedicaService.reporte(LocalDateTime.of(1995, 1, 1,0, 0), "M");
 		for(PacienteSenciilo item: pacienteSenciilos) {
@@ -107,6 +109,7 @@ public class PruebaUnidad2LmP2Application implements CommandLineRunner {
 			
 		}
 		
+		*/
 	}
 
 }

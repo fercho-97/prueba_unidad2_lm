@@ -45,7 +45,7 @@ public class Doctor {
 	
 	@OneToMany(mappedBy = "doctor")
 	private List<CitaMedica> citaMedicas;
-
+	
 	@Override
 	public String toString() {
 		return "Doctor [id=" + id + ", cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido
